@@ -1,0 +1,170 @@
+.navbar {
+    background-color: rgb(58, 58, 58) !important;
+    color: whitesmoke !important;
+}
+
+.btn-outline-white {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-radius: 1000px;
+    border-width: 2px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:active {
+    color: rgb(58, 58, 58);
+    background-color: white;
+}
+
+.header-main {
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-color: rgb(15, 15, 16);
+    display: flex;
+    justify-content: center;
+}
+
+.header-main pre {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+.typewriter {
+    overflow: hidden;
+}
+
+.typewriter pre {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    margin-top: 45vh;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.theme-color {
+    background-color: #22a6f2;
+    color: rgb(58, 58, 58);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.presentation {
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.presentation .bio {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.skills .box {
+    margin-top: -8rem;
+}
+
+.skills {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+    color: #141c3a;
+    display: block;
+    padding: 1.25rem;
+}
+
+.skill-img {
+    padding: 25%;
+}
+
+.skills .description>.title {
+    text-align: center;
+    width: 100%;
+}
+
+.skills .element-skill {
+    margin-top: 25px;
+}
+
+.progress-bar {
+    background-color: #0078b9;
+}
+
+.column {
+    border-bottom: 0px solid #E6ECF8;
+    border-right: 1px solid #E6ECF8;
+}
+
+.column:last-child {
+    border-right: none;
+    border-bottom: none;
+}
+
+.content .works {
+    padding-top: 5rem;
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .column:nth-child(2) {
+        border-right: none;
+        border-bottom: none;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .column {
+        border-right: none;
+        border-bottom: none;
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}

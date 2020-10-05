@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'assets/fonts/europanuova-cufonfonts-webfont/style.css';
+body,
+button,
+input,
+select,
+nav,
+a,
+div,
+textarea {
+    font-family: 'EuropaNuova-Regular Regular', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
