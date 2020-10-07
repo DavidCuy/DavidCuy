@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content class="mat-typography">
+    <p>{{ data.description }}</p>
+
+    <ul>
+        <li *ngFor="let skill of data.details">
+            <span><b>{{ skill.name }}</b></span><br> &nbsp;&nbsp;
+            <i>{{ skill.description }}</i>
+        </li>
+    </ul>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button class="btn btn-secondary" mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

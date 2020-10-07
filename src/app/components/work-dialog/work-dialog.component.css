@@ -1,0 +1,5 @@
+.mat-dialog-container,
+.cdk-overlay-pane {
+    background: #fff !important;
+    color: #424242 !important;
+}

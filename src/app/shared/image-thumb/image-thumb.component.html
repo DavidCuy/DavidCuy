@@ -1,0 +1,12 @@
+<div class="thumb-card text-center">
+    <figure class="image">
+        <img class="img-thumb" [src]="imageSrc">
+        <figcaption>
+            <h3 class="title">{{ title }}</h3>
+
+            <a *ngIf="showWeb" class="btn btn-outline-white btn-rounded mb-2" [href]="website" target="_blank"><span>Website</span></a>
+            <a class="btn btn-outline-white btn-rounded" (click)="openDialog()" href="javascript:void(0)"><span>What I did?</span></a>
+        </figcaption>
+        <div class="overlay"></div>
+    </figure>
+</div>

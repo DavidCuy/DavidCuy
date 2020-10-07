@@ -45,6 +45,7 @@
     margin-top: 45vh;
     font-size: 50px;
     text-transform: uppercase;
+    overflow: unset;
 }
 
 .navbar-toggler {
@@ -72,7 +73,7 @@
     cursor: pointer;
 }
 
-.presentation {
+.intro {
     padding-top: 5rem;
     padding-bottom: 12rem;
     text-align: center;
