@@ -12,7 +12,8 @@ import {
   ImageThumbComponent,
   WorkDialogComponent,
   ImageCardComponent,
-  NavbarComponent
+  NavbarComponent,
+  CookiesBarComponent
 } from './components/components.index';
 
 // Pages components
@@ -25,7 +26,8 @@ import { IndexComponent } from './pages/index/index.component';
     WorkDialogComponent,
     ImageCardComponent,
     NavbarComponent,
-    IndexComponent
+    IndexComponent,
+    CookiesBarComponent
   ],
   entryComponents: [
     WorkDialogComponent
