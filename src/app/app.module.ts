@@ -13,11 +13,13 @@ import {
   WorkDialogComponent,
   ImageCardComponent,
   NavbarComponent,
-  CookiesBarComponent
+  CookiesBarComponent,
+  FloatingButtonComponent
 } from './components/components.index';
 
 // Pages components
 import { IndexComponent } from './pages/index/index.component';
+// import { FloatingButtonComponent } from './components/floating-button/floating-button.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { IndexComponent } from './pages/index/index.component';
     ImageCardComponent,
     NavbarComponent,
     IndexComponent,
-    CookiesBarComponent
+    CookiesBarComponent,
+    FloatingButtonComponent
   ],
   entryComponents: [
     WorkDialogComponent
