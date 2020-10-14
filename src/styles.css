@@ -50,3 +50,16 @@ mat-dialog-container {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.theme-color {
+    background-color: #22a6f2;
+    color: rgb(58, 58, 58);
+}
+
+.theme-color-text {
+    color: #22a6f2;
+}
+
+.pointer {
+    cursor: pointer;
+}
