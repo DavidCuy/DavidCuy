@@ -104,3 +104,7 @@ figure {
     padding: 0;
     margin: 0;
 }
+
+h4 {
+    font-size: 1rem !important;
+}

@@ -1,6 +1,5 @@
 import { AfterContentInit, Component } from '@angular/core';
-import { Knowledge, Skill, Work } from './interfaces/interface.index';
-import { WorkMade } from './interfaces/workmade.interface';
+import { Knowledge, Skill, Work, StartUp } from './interfaces/interface.index';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +21,7 @@ export class AppComponent implements AfterContentInit {
 
   knowledges: Knowledge[] = [
     {
-      image: '../assets/images/skills/backend.svg',
+      image: 'assets/images/skills/backend.svg',
       title: 'Backend',
       description: 'I worked with multiple language and technologies in backend. Including Serverless',
       skills: [
@@ -44,7 +43,7 @@ export class AppComponent implements AfterContentInit {
       ]
     },
     {
-      image: '../assets/images/skills/frontend.svg',
+      image: 'assets/images/skills/frontend.svg',
       title: 'FrontEnd',
       description: 'I love to work with interface, making things look good',
       skills: [
@@ -71,7 +70,7 @@ export class AppComponent implements AfterContentInit {
       ]
     },
     {
-      image: '../assets/images/skills/devops.svg',
+      image: 'assets/images/skills/devops.svg',
       title: 'DevOps',
       description: 'I\'m in continuous improvement with best practices for delivery of clean code',
       skills: [
@@ -88,7 +87,7 @@ export class AppComponent implements AfterContentInit {
       ]
     },
     {
-      image: '../assets/images/skills/terminal.svg',
+      image: 'assets/images/skills/terminal.svg',
       title: 'Others',
       description: 'Like mecathronics engineer I have other skills and passions',
       skills: [
@@ -235,6 +234,36 @@ export class AppComponent implements AfterContentInit {
           }
         ]
       }
+    }
+  ];
+
+  startUps: StartUp[] = [
+    {
+      imageUrl: 'assets/images/startups/studioav.png',
+      description: 'You want your techs ideas comes true. We make it posible, we help business into a digital transition',
+      effects: false,
+      status: 'Progress'
+    },
+    {
+      imageUrl: 'assets/images/startups/avi.png',
+      description: 'Measure, optimize and monetize the energy consumption of your industrial equipments using IoT and data Analytics',
+      effects: true,
+      status: 'launched'
+    }
+  ];
+
+  social: any[] = [
+    {
+      icon: 'fa-linkedin-in',
+      link: 'https://www.linkedin.com/in/david-cuy-59a3b7129/'
+    },
+    {
+      icon: 'fa-github',
+      link: 'https://github.com/DavidCuy'
+    },
+    {
+      icon: 'fa-youtube',
+      link: 'https://www.youtube.com/channel/UCZ6FvCE5SRLjQIYV8DhrwHQ'
     }
   ];
 

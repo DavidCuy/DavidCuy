@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <svg height="30" width="30">
+            <circle cx="15" cy="15" r="10" fill="#eb5c55" />
+          </svg>
+            <svg height="30" width="30">
+            <circle cx="15" cy="15" r="10" fill="#f6c048" />
+          </svg>
+            <svg height="30" width="30">
+            <circle cx="15" cy="15" r="10" fill="#64cb44" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto right">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline btn-white">Contact me</button>
+                </li>
+
+                <li class="nav-item ml-2">
+                    <button type="button" (click)="download_resume()" class="btn btn-outline btn-pdf"><i class="fas fa-file-pdf"></i> Resume</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

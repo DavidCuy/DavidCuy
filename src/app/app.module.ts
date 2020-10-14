@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { WorkDialogComponent } from './components/work-dialog/work-dialog.component';
 import { ImageCardComponent } from './shared/image-card/image-card.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageThumbComponent,
     WorkDialogComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    NavbarComponent
   ],
   entryComponents: [
     WorkDialogComponent

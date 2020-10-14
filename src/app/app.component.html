@@ -1,31 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <svg height="30" width="30">
-                <circle cx="15" cy="15" r="10" fill="#eb5c55" />
-              </svg>
-                <svg height="30" width="30">
-                <circle cx="15" cy="15" r="10" fill="#f6c048" />
-              </svg>
-                <svg height="30" width="30">
-                <circle cx="15" cy="15" r="10" fill="#64cb44" />
-              </svg>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto right">
-                    <li class="nav-item active">
-                        <button type="button" class="btn btn-outline-white">Contact me</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <app-navbar></app-navbar>
     <div class="header-main">
         <div class="typewriter align-middle">
             <pre id="typedtext"></pre>
@@ -107,31 +81,53 @@
             </div>
         </div>
     </div>
-    <div class="skills">
+    <div class="start-up">
         <div class="container">
-            <div class="box">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12 column" *ngFor="let knowledge of knowledges">
-                        <div class="skill-img">
-                            <img class="img-fluid" [src]="knowledge.image">
+            <div class="row">
+                <div class="col-md-6 col-sm-12" *ngFor="let startup of startUps">
+                    <app-image-card [imageUrl]="startup.imageUrl" [description]="startup.description" [effects]="startup.effects" [status]="startup.status">
+                    </app-image-card>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-12 center">
+                    <h3 class="title">Want to talk?</h3>
+                    <p class="text-center">
+                        I like to share ideas with someone else, talking about product design or maybe I can help with any project in your mind.
+                    </p>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <button class="btn btn-outline-theme"><i class="fas fa-mug-hot"></i> Let's take a coffee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title">
+                    <h3>Personal projects</h3>
+                    <p>When I have some free time, I made some little personal projects.
+                        <br> I will publish some of them soon, I just need a little time to find them...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="call-to-action mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <h2>Start a project</h2>
                         </div>
-                        <div class="description">
-                            <h4 class="title">{{ knowledge.title }}</h4>
-                            <p class="short">{{ knowledge.description }}</p>
-                        </div>
-                        <div class="element-skill" *ngFor="let skill of knowledge.skills">
-                            <div class="pointer" *ngIf="skill.moreInfo" placement="left" ngbTooltip="More Info" (click)="moreInfo(skill)">
-                                <label class="pointer">{{ skill.name }}</label>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': skill.hability + '%' }" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">{{ skill.hability }}%</div>
-                                </div>
-                            </div>
-                            <div *ngIf="!skill.moreInfo">
-                                <label>{{ skill.name }}</label>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': skill.hability + '%' }" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">{{ skill.hability }}%</div>
-                                </div>
-                            </div>
+                        <div class="col-md-4 col-sm-12 text-center">Interested in working together? We should queue up a chat.</div>
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <button class="btn btn-outline btn-white">Let's do this</button>
                         </div>
                     </div>
                 </div>
@@ -140,6 +136,28 @@
     </div>
 </div>
 
+
+<footer>
+    <div class="footer theme-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title">
+                    <h3><img src="assets/images/logo_white.svg" width="70"></h3>
+                </div>
+                <div class="col-md-4 offset-md-4 col-sm-12 thinking">
+                    <p>Everyday is a new opportunity to improve yourself</p>
+                </div>
+                <div class="col-md-6 offset-md-3 col-sm-12 social">
+                    <a *ngFor="let media of social" class="btn btn-circle btn-white" [href]="media.link" target="_blank"><i class="fab {{ media.icon }}"></i></a>
+                </div>
+
+                <div class="col-12 mt-5 farewell">
+                    <p>Made with 💖 by me</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <router-outlet></router-outlet>

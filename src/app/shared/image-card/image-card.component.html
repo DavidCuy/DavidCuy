@@ -1,1 +1,15 @@
-<p>image-card works!</p>
+<div class="box" [ngClass]="{ 'glow-animation': effects, 'pointer': true }">
+    <div class="box-title">
+        <div class="img-box p-4">
+            <img class="img-fluid" [src]="imageUrl">
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="center">{{ description }}</p>
+        <p class="center theme-color" [ngSwitch]="statusNum">
+            <span *ngSwitchCase="CLOSED"><i class="fas fa-store-alt-slash"></i> Shutdown</span>
+            <span *ngSwitchCase="PROGRESS"><i class="fas fa-tools"></i> Working on</span>
+            <span *ngSwitchCase="LAUNCHED"><i class="fas fa-rocket"></i> Launched</span>
+        </p>
+    </div>
+</div>

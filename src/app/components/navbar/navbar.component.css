@@ -1,0 +1,55 @@
+.navbar {
+    background-color: rgb(58, 58, 58) !important;
+    color: whitesmoke !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.btn-outline {
+    border-radius: 1000px;
+    border-width: 2px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.btn-white {
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.btn-white:hover,
+.btn-white:active {
+    color: rgb(58, 58, 58);
+    background-color: white;
+}
+
+.btn-pdf {
+    color: #b30b00;
+    border-color: #b30b00;
+}
+
+.btn-pdf:hover,
+.btn-pdf:active {
+    color: white;
+    background-color: #b30b00;
+}
+
+@media only screen and (max-width: 991px) {
+    .btn-outline {
+        margin-bottom: 0.7rem;
+    }
+}

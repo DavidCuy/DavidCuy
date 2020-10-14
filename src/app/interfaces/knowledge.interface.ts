@@ -1,4 +1,4 @@
-import { Skill } from './skill.interfase';
+import { Skill } from './skill.interface';
 
 export interface Knowledge {
   image: string;

@@ -1,23 +1,3 @@
-.navbar {
-    background-color: rgb(58, 58, 58) !important;
-    color: whitesmoke !important;
-}
-
-.btn-outline-white {
-    color: whitesmoke;
-    border-color: whitesmoke;
-    border-radius: 1000px;
-    border-width: 2px;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-}
-
-.btn-outline-white:hover,
-.btn-outline-white:active {
-    color: rgb(58, 58, 58);
-    background-color: white;
-}
-
 .header-main {
     width: 100%;
     height: calc(100vh - 55px);
@@ -48,22 +28,6 @@
     overflow: unset;
 }
 
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    color: white;
-}
-
-.navbar-collapse {
-    text-align: center;
-}
-
 .theme-color {
     background-color: #22a6f2;
     color: rgb(58, 58, 58);
@@ -79,6 +43,17 @@
     text-align: center;
 }
 
+.footer {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+.footer .thinking {
+    font-size: larger;
+    margin-top: 2rem;
+}
+
 .title {
     text-align: center;
 }
@@ -88,7 +63,8 @@
     padding-right: 3.5rem;
 }
 
-.skills .box {
+.skills .box,
+.start-up .row {
     margin-top: -8rem;
 }
 
@@ -107,7 +83,7 @@
 }
 
 .skill-img {
-    padding: 25%;
+    padding: 15%;
 }
 
 .skills .description>.title {
@@ -133,8 +109,97 @@
     border-bottom: none;
 }
 
-.content .works {
+.content .works,
+.content .projects {
     padding-top: 5rem;
+}
+
+.works {
+    padding-bottom: 3.5rem;
+}
+
+.btn-outline-theme {
+    color: #22a6f2;
+    border-color: #22a6f2;
+    border-radius: 1000px;
+    border-width: 3px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-outline-theme:hover {
+    color: white;
+    border-color: #22a6f2;
+    background-color: #22a6f2;
+}
+
+.call-to-action .box {
+    background-color: #141c3a;
+    color: white;
+}
+
+.btn-outline {
+    border-radius: 1000px;
+    border-width: 2px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.btn-white {
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.call-to-action .btn-outline {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.call-to-action .box {
+    box-shadow: none;
+}
+
+.call-to-action h2 {
+    margin-top: 0.5rem;
+}
+
+.btn-white:hover,
+.btn-white:active {
+    color: rgb(58, 58, 58);
+    background-color: white;
+}
+
+footer {
+    margin-top: -4.5rem;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 14px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.social .btn {
+    margin-left: 1.5rem;
+}
+
+.social .btn:nth-child(1) {
+    margin-left: 0px;
+}
+
+.farewell {
+    font-size: small;
 }
 
 

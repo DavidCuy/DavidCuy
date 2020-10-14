@@ -9,9 +9,10 @@ nav,
 a,
 div,
 textarea {
-    font-family: 'EuropaNuova-Regular Regular', sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'EuropaNuova-Regular Regular', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 1rem !important;
 }
 
 html,
@@ -19,13 +20,33 @@ body {
     height: 100%;
 }
 
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+h3 {
+    font-size: 1.75rem !important;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2rem !important;
 }
 
 .mat-dialog-container,
 mat-dialog-container {
     background: #fff !important;
     color: #424242 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(58, 58, 58);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
