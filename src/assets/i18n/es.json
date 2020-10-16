@@ -1,0 +1,52 @@
+{
+    "startups": {
+        "avi": {
+            "pricipalTitle": "¿Qué es AVI?",
+            "description": "Es un sistema de monitoreo de energía eléctrica en tiempo real que combina el poder del IoT y la Inteligencia Artificial para digitalizar el consumo de electricidad de tus equipos industriales, y optimizarlo con base en alertas y recomendaciones inteligentes basadas en tus datos operativos.",
+            "techsTitle": "Especificaciones técnicas",
+            "techs": {
+                "backend": {
+                    "title": "Backend",
+                    "paragrahpDescriptions": [
+                        "Junto con el equipo, el sistema Core se desarrollo en Laravel y SQL para las bases de datos. El core se encagar del manejo de datos administrativos como empresas, sucursales, equipos, Hubs (AVIs), etc.",
+                        "Se utilizó el patrón de diseño por repositorios para el código, para una mejor lectura para todos los programadores del equipo.",
+                        "El core funciona como una API. La documentación se realizó con generador de código automático Swagger"
+                    ]
+                },
+                "frontend": {
+                    "title": "Frontend",
+                    "paragrahpDescriptions": [
+                        "Junto con el equipo, se utilizó Angular para las vistas. En un principio fue Angular 6, al día de hoy es Angular 9.",
+                        "Se utilizó la biblioteca AWS Amplify para mostrar los datos en tiempo real de los sensores en algunas vistas.",
+                        "El equipo le gusta hacer gráficas. Así que se implementaron con las librerías chart-js y ngx-charts"
+                    ]
+                },
+                "microservices": {
+                    "title": "Microservicios",
+                    "paragrahpDescriptions": [
+                        "Todos los microservicios están hechos en python.",
+                        "Algunos de estos microservicios son:"
+                    ],
+                    "list": [
+                        { "title": "Scrapper de CFE", "description": "Se obtiene datos (uutiliando el framework scrapy) de las páginas web de CFE" },
+                        { "title": "Notificaciones", "description": "Envía un SMS cuando una alerta (definida por el usuario) es disparada" },
+                        { "title": "Actualizador de grupos de datos", "description": "Todos los datos leídos por los sensores son agrupados en caché periodicamente" },
+                        { "title": "Transformación ETL de IoT", "description": "Los datos provenientes de los sensores no son 100% útiles, así que implementé una función ETL para enriquecer la data" }
+                    ]
+                },
+                "aws": {
+                    "title": "Servicios de AWS",
+                    "paragrahpDescriptions": [
+                        "Estoy realmente sorprendido con AWS.",
+                        "Algunos servicios que son utilizados en AVI son:"
+                    ]
+                }
+            },
+            "architecture": {
+                "title": "Arquitectura",
+                "description": "Me gusta hacer diagramas y explicarselos a mi equipo."
+            },
+            "moreInfo": "¿Deseas conocer más? Aquí te dejo el enlace a la web de "
+        }
+    }
+}

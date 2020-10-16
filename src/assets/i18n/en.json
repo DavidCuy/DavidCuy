@@ -1,0 +1,52 @@
+{
+    "startups": {
+        "avi": {
+            "pricipalTitle": "What is it?",
+            "description": "AVI Energy Labs is a electric real-time monitoring system, that combines the power of IoT and Machine Learning to become digital your energy consumption of yours industrial machines, optimize it based on smart alerts and recommendations based on your operational data.",
+            "techsTitle": "Techs specifications",
+            "techs": {
+                "backend": {
+                    "title": "Backend",
+                    "paragrahpDescriptions": [
+                        "With the team, I used Laravel with MySQL DB in the core system. This core manage all administration data like business, equipments, hubs, etc.",
+                        "We use repository pattern in the code, for a better read for a programmers team.",
+                        "This core works like API. The documentations was implemented with Swagger code generator"
+                    ]
+                },
+                "frontend": {
+                    "title": "Frontend",
+                    "paragrahpDescriptions": [
+                        "With the team, I used Angular for all views. At the beginning was Angular 6, at today it is Angular 9.",
+                        "We implements AWS Amplify library to show real-time data received from the sensors in some views.",
+                        "The team love to show charts. So it was implemented with chart-js and ngx-charts libraries"
+                    ]
+                },
+                "microservices": {
+                    "title": "Microservices",
+                    "paragrahpDescriptions": [
+                        "All the microservices are written in python.",
+                        "Some of these microservices are:"
+                    ],
+                    "list": [
+                        { "title": "CFE Scrapper", "description": "We scrap (using scrapy framework) data from CFE tariff web pages" },
+                        { "title": "Notifications", "description": "Send an SMS when a alert (defined by the user) is fired" },
+                        { "title": "Updater datasets", "description": "Periodically, all data read from sensors is grouped in datasets in cache" },
+                        { "title": "IoT ETL transform", "description": "The data incoming from sensor isn't enough, so I implemented a ETL function to prepare functional data" }
+                    ]
+                },
+                "aws": {
+                    "title": "AWS Services",
+                    "paragrahpDescriptions": [
+                        "I really engaged with AWS.",
+                        "Some of service that AVI use are:"
+                    ]
+                }
+            },
+            "architecture": {
+                "title": "Architecture",
+                "description": "I love make diagrams and explain it to my team."
+            },
+            "moreInfo": "You want to know more? Here is the web page "
+        }
+    }
+}

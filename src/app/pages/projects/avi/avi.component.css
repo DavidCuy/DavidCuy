@@ -50,3 +50,7 @@ section.content {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.mt-xlg-5 {
+    margin-top: 10rem;
+}

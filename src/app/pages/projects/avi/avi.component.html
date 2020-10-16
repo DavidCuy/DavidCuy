@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="title">
-                    <h2 class="text-center">What is it?</h2>
+                    <h2 class="text-center">{{ 'startups.avi.pricipalTitle' | translate }}</h2>
                 </div>
             </div>
         </div>
@@ -28,8 +28,7 @@
         <div class="row">
             <div class="col-12">
                 <p class="text-center">
-                    AVI Energy Labs is a electric real-time monitoring system, that combines the power of IoT and Machine Learning to become digital your energy consumption of yours industrial machines, optimize it based on smart alerts and recommendations based on your
-                    operational data.
+                    {{ 'startups.avi.description' | translate }}
                 </p>
             </div>
         </div>
@@ -37,7 +36,7 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div class="title">
-                    <h2 class="text-center">Techs specifications</h2>
+                    <h2 class="text-center">{{ 'startups.avi.techsTitle' | translate }}</h2>
                 </div>
             </div>
         </div>
@@ -45,50 +44,41 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="title text-center">
-                    <h3>Backend</h3>
+                    <h3>{{ 'startups.avi.techs.backend.title' | translate }}</h3>
                     <img class="img-fluid tech-img" src="/assets/images/techs/laravel.png">
                 </div>
                 <div class="description text-center">
-                    <p>With the team, I used Laravel with MySQL DB in the core system. This core manage all administration data like business, equipments, hubs, etc.</p>
-                    <p>We use repository pattern in the code, for a better read for a programmers team.</p>
-                    <p>This core works like API. The documentations was implemented with Swagger code generator</p>
+                    <p *ngFor="let index of [0, 1, 2]">{{ 'startups.avi.techs.backend.paragrahpDescriptions.' + index | translate }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="title text-center">
-                    <h3>Frontend</h3>
+                    <h3>{{ 'startups.avi.techs.frontend.title' | translate }}</h3>
                     <img class="img-fluid tech-img" src="/assets/images/techs/angular.png">
                 </div>
                 <div class="description text-center">
-                    <p>With the team, I used Angular for all views. At the beginning was Angular 6, at today it is Angular 9</p>
-                    <p>We implements AWS Amplify library to show real-time data received from the sensors in some views</p>
-                    <p>The team love to show charts. So it was implemented with chart-js and ngx-charts libraries</p>
+                    <p *ngFor="let index of [0, 1, 2]">{{ 'startups.avi.techs.frontend.paragrahpDescriptions.' + index | translate }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="title text-center">
-                    <h3>Microservices</h3>
+                    <h3>{{ 'startups.avi.techs.microservices.title' | translate }}</h3>
                     <img class="img-fluid tech-img" src="/assets/images/techs/serverless.png">
                 </div>
                 <div class="description text-center">
-                    <p>All the microservices are written in python</p>
-                    <p>Some of these microservices are:</p>
+                    <p *ngFor="let index of [0, 1]">{{ 'startups.avi.techs.microservices.paragrahpDescriptions.' + index | translate }}</p>
                     <ul>
-                        <li><i>CFE Scrapper</i> - We scrap (using scrapy framework) data from CFE tariff web pages </li>
-                        <li><i>Notifications</i> - Send an SMS when a alert (defined by the user) is fired</li>
-                        <li><i>Updater datasets</i> - Periodically, all data read from sensors is grouped in datasets in cache </li>
-                        <li><i>IoT ETL transform</i> - The data incoming from sensor isn't enough, so I implemented a ETL function to prepare functional data</li>
+                        <li *ngFor="let index of [0, 1, 2, 3]"><i>{{ ('startups.avi.techs.microservices.list.' + index + '.title') | translate }}</i> - {{ ('startups.avi.techs.microservices.list.' + index + '.description') | translate }} </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="title text-center">
-                    <h3>AWS Services</h3>
+                    <h3>{{ 'startups.avi.techs.aws.title' | translate }}</h3>
                     <img class="img-fluid tech-img" src="/assets/images/techs/aws2.png">
                 </div>
                 <div class="description text-center">
-                    <p>I really engaged with AWS</p>
-                    <p>Some of service that AVI use are:</p>
+                    <p *ngFor="let index of [0, 1]">{{ 'startups.avi.techs.aws.paragrahpDescriptions.' + index | translate }}</p>
                     <ul class="text-left">
                         <li><i>IoT Core & Analytics</i></li>
                         <li><i>Glue crawlers</i></li>
@@ -108,14 +98,21 @@
         <div class="row mt-5">
             <div class="col-12">
                 <div class="title">
-                    <h2 class="text-center">Architecture</h2>
+                    <h2 class="text-center">{{ 'startups.avi.architecture.title' | translate }}</h2>
                 </div>
-                <p class="text-center">
-                    I love make diagrams and explain it to my team.
-                </p>
+                <p class="text-center">{{ 'startups.avi.architecture.description' | translate }}</p>
             </div>
             <div class="col-12">
                 <img class="img-fluid" src="/assets/images/techs/avi_architecture.svg">
+            </div>
+        </div>
+
+
+        <div class="row mt-xlg-5">
+            <div class="col-12">
+                <div class="title">
+                    <p class="text-center">{{ 'startups.avi.moreInfo' | translate }} <a href="https://avienergy.mx" class="theme-color-text" target="_blank"> AVI ENERGY LABS</a></p>
+                </div>
             </div>
         </div>
     </div>

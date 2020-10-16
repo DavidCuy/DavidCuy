@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { fadeInAnimation } from './animations/fade-in.animation';
 
 @Component({
@@ -9,6 +10,9 @@ import { fadeInAnimation } from './animations/fade-in.animation';
   animations: [ fadeInAnimation ]
 })
 export class AppComponent implements OnInit {
+
+  public activeLang = 'es';
+
   telNumber = '9991941528';
   wpText = 'Hi! I saw your web resume. Let\'s talk!';
   social: any[] = [
@@ -26,7 +30,9 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  constructor(private router: Router) { }
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang(this.activeLang);
+  }
 
   ngOnInit(): void {
     // set up text to print, each item in array is new line
