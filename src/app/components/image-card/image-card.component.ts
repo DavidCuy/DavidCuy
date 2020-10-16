@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-image-card',
@@ -10,13 +11,14 @@ export class ImageCardComponent implements OnInit {
   @Input() description: string;
   @Input() effects: boolean;
   @Input() status: string;
+  @Input() url: string;
 
   PROGRESS = 1;
   CLOSED = 2;
   LAUNCHED = 3;
 
   statusNum: number = this.CLOSED;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.statusNum = this.getStatus(this.status);
@@ -31,6 +33,10 @@ export class ImageCardComponent implements OnInit {
       return this.CLOSED;
     }
     return this.CLOSED;
+  }
+
+  changeRoute(route: string): void {
+    this.router.navigate([route]);
   }
 
 }

@@ -1,0 +1,45 @@
+div a {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 80px;
+    top: 120px;
+    margin-top: -50px;
+    margin-right: -50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.line-cross {
+    background-color: #22a6f2;
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: 9px;
+    width: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-cross.left {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.line-cross.right {
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.close-btn:hover .line-cross {
+    background-color: #141c3a;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

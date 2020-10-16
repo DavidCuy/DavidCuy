@@ -243,13 +243,15 @@ export class IndexComponent implements OnInit, AfterContentInit {
       imageUrl: 'assets/images/startups/studioav.png',
       description: 'You want your techs ideas comes true. We make it posible, we help business into a digital transition',
       effects: false,
-      status: 'Progress'
+      status: 'Progress',
+      url: ''
     },
     {
       imageUrl: 'assets/images/startups/avi.png',
       description: 'Measure, optimize and monetize the energy consumption of your industrial equipments using IoT and data Analytics',
       effects: true,
-      status: 'launched'
+      status: 'launched',
+      url: 'startups/avi'
     }
   ];
 
@@ -294,6 +296,7 @@ export class IndexComponent implements OnInit, AfterContentInit {
         clearTimeout(this.timer);
       }
     }
+
     this.timer = setTimeout(() => {
       this.typeWriter();
     }, this.speed);

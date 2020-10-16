@@ -1,4 +1,4 @@
-<div class="box" [ngClass]="{ 'glow-animation': effects, 'pointer': true }">
+<div class="box" [ngClass]="{ 'glow-animation': effects, 'pointer': effects }" (click)="changeRoute(url)">
     <div class="box-title">
         <div class="img-box p-4">
             <img class="img-fluid" [src]="imageUrl">

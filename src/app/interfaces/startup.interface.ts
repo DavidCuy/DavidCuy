@@ -3,4 +3,5 @@ export interface StartUp {
   description: string;
   effects: boolean;
   status: string;
+  url: string;
 }

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  telNumber = '9991941528';
   social: any[] = [
     {
       icon: 'fa-linkedin-in',

@@ -1,0 +1,122 @@
+<app-close-button></app-close-button>
+
+<section class="title-section">
+    <div class="row" style="height: 100%;">
+        <div class="col-md-6 col-sm-12">
+            <div class="img-block">
+                <img src="/assets/images/startups/avi.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 align-items-center">
+            <div class="card-block">
+                <p class="align-middle text-center">AVI Energy Labs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="text-center">What is it?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                    AVI Energy Labs is a electric real-time monitoring system, that combines the power of IoT and Machine Learning to become digital your energy consumption of yours industrial machines, optimize it based on smart alerts and recommendations based on your
+                    operational data.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="text-center">Techs specifications</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title text-center">
+                    <h3>Backend</h3>
+                    <img class="img-fluid tech-img" src="/assets/images/techs/laravel.png">
+                </div>
+                <div class="description text-center">
+                    <p>With the team, I used Laravel with MySQL DB in the core system. This core manage all administration data like business, equipments, hubs, etc.</p>
+                    <p>We use repository pattern in the code, for a better read for a programmers team.</p>
+                    <p>This core works like API. The documentations was implemented with Swagger code generator</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title text-center">
+                    <h3>Frontend</h3>
+                    <img class="img-fluid tech-img" src="/assets/images/techs/angular.png">
+                </div>
+                <div class="description text-center">
+                    <p>With the team, I used Angular for all views. At the beginning was Angular 6, at today it is Angular 9</p>
+                    <p>We implements AWS Amplify library to show real-time data received from the sensors in some views</p>
+                    <p>The team love to show charts. So it was implemented with chart-js and ngx-charts libraries</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title text-center">
+                    <h3>Microservices</h3>
+                    <img class="img-fluid tech-img" src="/assets/images/techs/serverless.png">
+                </div>
+                <div class="description text-center">
+                    <p>All the microservices are written in python</p>
+                    <p>Some of these microservices are:</p>
+                    <ul>
+                        <li><i>CFE Scrapper</i> - We scrap (using scrapy framework) data from CFE tariff web pages </li>
+                        <li><i>Notifications</i> - Send an SMS when a alert (defined by the user) is fired</li>
+                        <li><i>Updater datasets</i> - Periodically, all data read from sensors is grouped in datasets in cache </li>
+                        <li><i>IoT ETL transform</i> - The data incoming from sensor isn't enough, so I implemented a ETL function to prepare functional data</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title text-center">
+                    <h3>AWS Services</h3>
+                    <img class="img-fluid tech-img" src="/assets/images/techs/aws2.png">
+                </div>
+                <div class="description text-center">
+                    <p>I really engaged with AWS</p>
+                    <p>Some of service that AVI use are:</p>
+                    <ul class="text-left">
+                        <li><i>IoT Core & Analytics</i></li>
+                        <li><i>Glue crawlers</i></li>
+                        <li><i>Athena</i></li>
+                        <li><i>Lambda functions</i></li>
+                        <li><i>Elasticache (Memcached)</i></li>
+                        <li><i>SNS & SQS</i></li>
+                        <li><i>DynamoDB</i></li>
+                        <li><i>EC2</i></li>
+                        <li><i>RDS</i></li>
+                        <li><i>S3</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="text-center">Architecture</h2>
+                </div>
+                <p class="text-center">
+                    I love make diagrams and explain it to my team.
+                </p>
+            </div>
+            <div class="col-12">
+                <img class="img-fluid" src="/assets/images/techs/avi_architecture.svg">
+            </div>
+        </div>
+    </div>
+</section>

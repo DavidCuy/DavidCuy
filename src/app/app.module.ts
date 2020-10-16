@@ -19,6 +19,8 @@ import {
 
 // Pages components
 import { IndexComponent } from './pages/index/index.component';
+import { AviComponent } from './pages/projects/avi/avi.component';
+import { CloseButtonComponent } from './components/close-button/close-button.component';
 // import { FloatingButtonComponent } from './components/floating-button/floating-button.component';
 
 @NgModule({
@@ -30,7 +32,9 @@ import { IndexComponent } from './pages/index/index.component';
     NavbarComponent,
     IndexComponent,
     CookiesBarComponent,
-    FloatingButtonComponent
+    FloatingButtonComponent,
+    AviComponent,
+    CloseButtonComponent
   ],
   entryComponents: [
     WorkDialogComponent

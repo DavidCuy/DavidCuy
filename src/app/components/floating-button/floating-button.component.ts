@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-floating-button',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./floating-button.component.css']
 })
 export class FloatingButtonComponent implements OnInit {
+  @Input() telNumber: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
