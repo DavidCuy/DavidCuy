@@ -4,8 +4,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { AviComponent } from './pages/projects/avi/avi.component';
 
 const APP_ROUTES: Routes = [
-  { path: '', component: IndexComponent },
-  { path: 'startups/avi', component: AviComponent }
+  { path: '', component: IndexComponent, data: { animation: 'HomePage' } },
+  { path: 'startups/avi', component: AviComponent, data: { animation: 'AviStartupPage' } }
 ];
 
 @NgModule({

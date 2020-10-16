@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./avi.component.css']
 })
 export class AviComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

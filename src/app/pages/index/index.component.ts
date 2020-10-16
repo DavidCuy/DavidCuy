@@ -1,12 +1,12 @@
-import { Component, OnInit, AfterContentInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit, OnDestroy } from '@angular/core';
 import { Knowledge, Skill, Work, StartUp } from '../../interfaces/interface.index';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['./index.component.css'],
 })
-export class IndexComponent implements OnInit, AfterContentInit {
+export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
 
   currentLine = [];
   timer;
@@ -28,17 +28,17 @@ export class IndexComponent implements OnInit, AfterContentInit {
       skills: [
         {
           name: 'PHP - Framework Laravel',
-          hability: 95,
+          hability: 99,
           moreInfo: true
         },
         {
           name: 'Python - Serverless Framework',
-          hability: 75,
+          hability: 80,
           moreInfo: true
         },
         {
           name: 'SQL - MySQL',
-          hability: 80,
+          hability: 85,
           moreInfo: false
         }
       ]
@@ -50,22 +50,22 @@ export class IndexComponent implements OnInit, AfterContentInit {
       skills: [
         {
           name: 'HTML',
-          hability: 95,
+          hability: 99,
           moreInfo: false
         },
         {
           name: 'CSS',
-          hability: 95,
+          hability: 99,
           moreInfo: false
         },
         {
           name: 'Javascript',
-          hability: 95,
+          hability: 99,
           moreInfo: false
         },
         {
           name: 'Angular >v6',
-          hability: 95,
+          hability: 90,
           moreInfo: true
         }
       ]
@@ -77,7 +77,7 @@ export class IndexComponent implements OnInit, AfterContentInit {
       skills: [
         {
           name: 'AWS',
-          hability: 75,
+          hability: 80,
           moreInfo: true
         },
         {
@@ -114,7 +114,7 @@ export class IndexComponent implements OnInit, AfterContentInit {
         },
         {
           name: 'IoT architecture',
-          hability: 95,
+          hability: 90,
           moreInfo: false
         }
       ]
@@ -255,6 +255,8 @@ export class IndexComponent implements OnInit, AfterContentInit {
     }
   ];
 
+  timeouts = [];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -264,6 +266,13 @@ export class IndexComponent implements OnInit, AfterContentInit {
     // set up text to print, each item in array is new line
     this.currentLine = this.aText[this.currentIndex].split('');
     this.typeWriter();
+  }
+
+  ngOnDestroy(): void {
+    // tslint:disable-next-line:prefer-for-of
+    for (let i = 0; i < this.timeouts.length; i++) {
+      clearTimeout(this.timeouts[i]);
+    }
   }
 
   public typeWriter(): void {
@@ -300,6 +309,8 @@ export class IndexComponent implements OnInit, AfterContentInit {
     this.timer = setTimeout(() => {
       this.typeWriter();
     }, this.speed);
+
+    this.timeouts.push(this.timer);
   }
 
   public moreInfo(skill: Skill): void {

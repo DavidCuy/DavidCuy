@@ -7,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FloatingButtonComponent implements OnInit {
   @Input() telNumber: string;
+  @Input() initialText: string;
 
   constructor() {
+    console.log(this.telNumber);
+    this.initialText = encodeURI(this.initialText);
   }
 
   ngOnInit(): void {
