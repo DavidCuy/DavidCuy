@@ -34,8 +34,9 @@ export class AppComponent implements OnInit {
     this.translate.setDefaultLang(this.activeLang);
   }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<any> {
     // set up text to print, each item in array is new line
+    this.wpText = await this.translate.get('wpBtn.text').toPromise();
   }
 
   prepareRoute(outlet: RouterOutlet): boolean {

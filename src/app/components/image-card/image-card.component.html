@@ -5,11 +5,11 @@
         </div>
     </div>
     <div class="card-body">
-        <p class="center">{{ description }}</p>
+        <p class="center">{{ description | translate }}</p>
         <p class="center theme-color-text" [ngSwitch]="statusNum">
-            <span *ngSwitchCase="CLOSED"><i class="fas fa-store-alt-slash"></i> Shutdown</span>
-            <span *ngSwitchCase="PROGRESS"><i class="fas fa-tools"></i> Working on</span>
-            <span *ngSwitchCase="LAUNCHED"><i class="fas fa-rocket"></i> Launched</span>
+            <span *ngSwitchCase="CLOSED"><i class="fas fa-store-alt-slash"></i> {{ 'index.startups.status.shutdown' | translate }}</span>
+            <span *ngSwitchCase="PROGRESS"><i class="fas fa-tools"></i> {{ 'index.startups.status.progress' | translate }}</span>
+            <span *ngSwitchCase="LAUNCHED"><i class="fas fa-rocket"></i> {{ 'index.startups.status.launched' | translate }}</span>
         </p>
     </div>
 </div>

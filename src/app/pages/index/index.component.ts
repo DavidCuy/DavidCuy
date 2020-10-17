@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterContentInit, OnDestroy } from '@angular/core';
 import { Knowledge, Skill, Work, StartUp } from '../../interfaces/interface.index';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-index',
@@ -14,30 +15,26 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
   reverse = false;
   speed = 70;
 
-  aText: string[] = [
-    'Hi! I\'m David',
-    'A FullStack developer',
-    'Want to see my work?'
-  ];
+  aText: string[] = [];
 
   knowledges: Knowledge[] = [
     {
       image: 'assets/images/skills/backend.svg',
-      title: 'Backend',
-      description: 'I worked with multiple language and technologies in backend. Including Serverless',
+      title: '',
+      description: '',
       skills: [
         {
-          name: 'PHP - Framework Laravel',
+          name: '',
           hability: 99,
           moreInfo: true
         },
         {
-          name: 'Python - Serverless Framework',
+          name: '',
           hability: 80,
           moreInfo: true
         },
         {
-          name: 'SQL - MySQL',
+          name: '',
           hability: 85,
           moreInfo: false
         }
@@ -45,26 +42,26 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
     },
     {
       image: 'assets/images/skills/frontend.svg',
-      title: 'FrontEnd',
-      description: 'I love to work with interface, making things look good',
+      title: '',
+      description: '',
       skills: [
         {
-          name: 'HTML',
+          name: '',
           hability: 99,
           moreInfo: false
         },
         {
-          name: 'CSS',
+          name: '',
           hability: 99,
           moreInfo: false
         },
         {
-          name: 'Javascript',
+          name: '',
           hability: 99,
           moreInfo: false
         },
         {
-          name: 'Angular >v6',
+          name: '',
           hability: 90,
           moreInfo: true
         }
@@ -72,16 +69,16 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
     },
     {
       image: 'assets/images/skills/devops.svg',
-      title: 'DevOps',
-      description: 'I\'m in continuous improvement with best practices for delivery of clean code',
+      title: '',
+      description: '',
       skills: [
         {
-          name: 'AWS',
+          name: '',
           hability: 80,
           moreInfo: true
         },
         {
-          name: 'Bitbucket pipelines',
+          name: '',
           hability: 80,
           moreInfo: false
         }
@@ -89,31 +86,31 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
     },
     {
       image: 'assets/images/skills/terminal.svg',
-      title: 'Others',
-      description: 'Like mecathronics engineer I have other skills and passions',
+      title: '',
+      description: '',
       skills: [
         {
-          name: 'Firmware Development',
+          name: '',
           hability: 85,
           moreInfo: true
         },
         {
-          name: 'Electronic circuit design',
-          hability: 70,
-          moreInfo: true
-        },
-        {
-          name: 'Computer vision',
+          name: '',
           hability: 75,
+          moreInfo: true
+        },
+        {
+          name: '',
+          hability: 70,
           moreInfo: false
         },
         {
-          name: 'Embedded system development',
+          name: '',
           hability: 85,
           moreInfo: false
         },
         {
-          name: 'IoT architecture',
+          name: '',
           hability: 90,
           moreInfo: false
         }
@@ -128,110 +125,108 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
       website: 'https://www.digitalcactus.mx',
       showWeb: true,
       workMade: {
-        title: 'PHP - Framework Laravel',
-        description: 'I worked in a shipments and landings modules for Katcon\'s suppliers. I was a sub-employee from Digital Catus Mx',
+        title: '',
+        description: '',
         details: []
       }
     },
     {
       imageUrl: 'assets/images/work/pollposition.jpeg',
-      title: 'Public opinion massive caller',
+      title: '',
       website: 'http://pollposition.info/',
       showWeb: true,
       workMade: {
-        title: 'Laravel / Angular',
+        title: '',
         // tslint:disable-next-line:max-line-length
-        description: 'In pollposition I worked with a team in both sides, backend and frontend. In this case I worked more often in backend. \n' +
-                      'The principal target was created interactive automated phone calls inquests for massive calls',
+        description: '',
         details: [{
-          name: 'Twilio',
-          description: 'We used Twilio programmable voice for build the automated conversations'
+          name: '',
+          description: ''
         }, {
-          name: 'IFT algorithm',
-          description: 'We implement an algorithm for generated real phone numbers using IFT (Instito Federal de Telecomunicaciones) information'
+          name: '',
+          description: ''
         }, {
-          name: 'Passport',
-          description: 'We use Passport first-party client API'
+          name: '',
+          description: ''
         }, {
-          name: 'Queues',
-          description: 'An inquest could be realized for a entired city, so we implements severals queues for dispatching calls according with available phone callers'
+          name: '',
+          description: ''
         }, {
-          name: 'DevOps',
-          description: 'I implemented DevOps workflow. For backend I used Envoy and for frontend I used bitbucket pipelines. Both were deployed on AWS, EC2 and S3 respectively'
+          name: '',
+          description: ''
         }]
       }
     },
     {
       imageUrl: 'assets/images/work/swapp.jpeg',
-      title: 'Taxi\'s platform for public transportation',
+      title: '',
       website: 'https://swappcloud.com/',
       showWeb: true,
       workMade: {
-        title: 'Laravel / Python',
-        description: 'We made a complete platform for proccess electronic (credit card, SPEI, etc) and cash payments, driver balance and invoice emitter system',
+        title: '',
+        description: '',
         details: [{
-          name: 'Openpay',
-          description: 'I made a payment gateway in a microservice using PHP SDK for process payment. The gateways get requests from mobile app and core web serve.' +
-                        'This gateway could be integrated like a first-party in core server'
+          name: '',
+          description: ''
         }, {
-          name: 'Emite',
-          description: 'We automatize the process of a taxi driver make an invoice'
+          name: '',
+          description: ''
         }, {
-          name: 'AWS SAM (Python)',
-          description: 'To confirm a payments of a taxi driver was successful, I made a AWS Serverless Application Model function to confirm it and fire a notification event in firebase'
+          name: '',
+          description: ''
         }, {
-          name: 'Passport',
-          description: 'We use Passport first-party client API'
+          name: '',
+          description: ''
         }]
       }
     },
     {
       imageUrl: 'assets/images/work/kidscars.jpeg',
-      title: 'Kids car rental for malls',
+      title: '',
       website: '',
       showWeb: false,
       workMade: {
-        title: 'PHP - Framework Laravel',
-        description: 'We made a CRM for car rentals based in time. Generate reports by placements and employees',
+        title: '',
+        description: '',
         details: []
       }
     },
     {
       imageUrl: 'assets/images/work/sinbio.jpeg',
-      title: 'Engineering and biotechnology solutions',
+      title: '',
       website: 'https://www.sinbio.com.mx',
       showWeb: true,
       workMade: {
-        title: 'Firmware / ESP8266',
-        description: 'We made a IoT monitoring system for a grease solvent. With a low level of dissolvent the device send an alert to a Slack account',
+        title: '',
+        description: '',
         details: [
           {
-            name: 'ESP8266',
-            description: 'We selected ESP8266 microcontroller beacause has a native WiFi integrations in firmware'
+            name: '',
+            description: ''
           },
           {
-            name: 'Arduino Framewok',
-            description: 'I programm the microcontroller using Arduino Framework'
+            name: '',
+            description: ''
           }
         ]
       }
     },
     {
       imageUrl: 'assets/images/work/puntie.jpeg',
-      title: 'Startup focus on design and create products to the dance world',
+      title: '',
       website: '',
       showWeb: false,
       workMade: {
-        title: 'Firmware / ESP32',
-        description: 'We made a device can sense an accelerometer and gyroscope to advertise with leds the position of the ballerina\'s foot and advertise the info by bluetooth',
+        title: '',
+        description: '',
         details: [
           {
-            name: 'ESP32',
-            description: 'We selected ESP32 microcontroller beacause has a native Bluetooth >4.0 integrations in firmware'
+            name: '',
+            description: ''
           },
           {
-            name: 'Arduino Framewok',
-            description: 'I programm the microcontroller using Arduino Framework'
+            name: '',
+            description: ''
           }
         ]
       }
@@ -241,14 +236,14 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
   startUps: StartUp[] = [
     {
       imageUrl: 'assets/images/startups/studioav.png',
-      description: 'You want your techs ideas comes true. We make it posible, we help business into a digital transition',
+      description: '',
       effects: false,
       status: 'Progress',
       url: ''
     },
     {
       imageUrl: 'assets/images/startups/avi.png',
-      description: 'Measure, optimize and monetize the energy consumption of your industrial equipments using IoT and data Analytics',
+      description: '',
       effects: true,
       status: 'launched',
       url: 'startups/avi'
@@ -257,12 +252,52 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
 
   timeouts = [];
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    // SKILLS
+    // tslint:disable-next-line:no-shadowed-variable
+    for (const { index, value } of this.knowledges.map((value, index) => ({ index, value }))) {
+      value.title = this.translate.instant(`index.skills.${ index }.title`);
+      value.description = this.translate.instant(`index.skills.${ index }.description`);
+
+      // tslint:disable-next-line:no-shadowed-variable
+      for (const { index2, value2 } of value.skills.map((value2, index2) => ({ index2, value2 }))) {
+        value2.name = this.translate.instant(`index.skills.${ index }.skillNames.${ index2 }`);
+      }
+    }
+
+    // WORKS
+    // tslint:disable-next-line:no-shadowed-variable
+    for (const { index, value } of this.recentWorks.map((value, index) => ({ index, value }))) {
+      value.title = this.translate.instant(`index.works.recents.${ index }.title`);
+      value.workMade.title = this.translate.instant(`index.works.recents.${ index }.madeTitle`);
+      value.workMade.description = this.translate.instant(`index.works.recents.${ index }.madeDescription`);
+
+      // tslint:disable-next-line:no-shadowed-variable
+      for (const { index2, value2 } of value.workMade.details.map((value2, index2) => ({ index2, value2 }))) {
+        value2.name = this.translate.instant(`index.works.recents.${ index }.details.${ index2 }.name`);
+        value2.description = this.translate.instant(`index.works.recents.${ index }.details.${ index2 }.description`);
+      }
+    }
+
+    // STARTUPS
+    // tslint:disable-next-line:no-shadowed-variable
+    for (const { index, value } of this.startUps.map((value, index) => ({ index, value }))) {
+      value.description = this.translate.instant(`index.startups.list.${ index }`);
+    }
+  }
+
+  async resolve_get_translate(index: string): Promise<any> {
+    return await this.translate.get(index).toPromise();
+  }
 
   ngOnInit(): void {
   }
 
-  ngAfterContentInit(): void {
+  async ngAfterContentInit(): Promise<any> {
+    for (let i = 0; i < 3; i++) {
+      this.aText.push(await this.translate.get(`index.intro.${ i }`).toPromise());
+    }
+
     // set up text to print, each item in array is new line
     this.currentLine = this.aText[this.currentIndex].split('');
     this.typeWriter();

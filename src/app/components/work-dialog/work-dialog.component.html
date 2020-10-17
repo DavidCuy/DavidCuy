@@ -1,11 +1,11 @@
-<h2 mat-dialog-title>{{ data.title }}</h2>
+<h2 mat-dialog-title>{{ data.title | translate }}</h2>
 <mat-dialog-content class="mat-typography">
-    <p>{{ data.description }}</p>
+    <p>{{ data.description | translate }}</p>
 
     <ul>
         <li *ngFor="let skill of data.details">
-            <span><b>{{ skill.name }}</b></span><br> &nbsp;&nbsp;
-            <i>{{ skill.description }}</i>
+            <span><b>{{ skill.name | translate }}</b></span><br> &nbsp;&nbsp;
+            <i>{{ skill.description | translate }}</i>
         </li>
     </ul>
 </mat-dialog-content>

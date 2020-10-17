@@ -17,11 +17,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto right">
                 <li class="nav-item">
-                    <a href="mailto:{{ email }}" class="btn btn-outline btn-white">Contact me</a>
+                    <a href="mailto:{{ email }}" class="btn btn-outline btn-white">{{ 'navbar.btn.contact' | translate }}</a>
                 </li>
 
                 <li class="nav-item ml-2">
-                    <button type="button" (click)="download_resume()" class="btn btn-outline btn-pdf"><i class="fas fa-file-pdf" style="color: white"></i> Resume</button>
+                    <button type="button" (click)="download_resume()" class="btn btn-outline btn-pdf"><i class="fas fa-file-pdf" style="color: white"></i> {{ 'navbar.btn.resume' | translate }}</button>
                 </li>
             </ul>
         </div>

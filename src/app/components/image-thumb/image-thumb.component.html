@@ -2,10 +2,10 @@
     <figure class="image">
         <img class="img-thumb" [src]="imageSrc">
         <figcaption>
-            <h4 class="title">{{ title }}</h4>
+            <h4 class="title">{{ title | translate }}</h4>
 
-            <a *ngIf="showWeb" class="btn btn-outline-white btn-rounded mb-2" [href]="website" target="_blank"><span>Website</span></a>
-            <a class="btn btn-outline-white btn-rounded" (click)="openDialog()" href="javascript:void(0)"><span>What I did?</span></a>
+            <a *ngIf="showWeb" class="btn btn-outline-white btn-rounded mb-2" [href]="website" target="_blank"><span>{{ 'index.works.thumb.website' | translate }}</span></a>
+            <a class="btn btn-outline-white btn-rounded" (click)="openDialog()" href="javascript:void(0)"><span>{{ 'index.works.thumb.dialogBtn' | translate }}</span></a>
         </figcaption>
         <div class="overlay"></div>
     </figure>

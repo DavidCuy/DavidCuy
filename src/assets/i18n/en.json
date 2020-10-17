@@ -1,4 +1,183 @@
 {
+    "navbar": {
+        "btn": {
+            "contact": "Contact me",
+            "resume": "Resume"
+        }
+    },
+    "index": {
+        "intro": [
+            "Hi! I'm David",
+            "A FullStack developer",
+            "Want to see my work?"
+        ],
+        "bio": {
+            "title": "Hi! I'm David Cuy. Nice to meet you",
+            "description": "I’m a Mechatronics Engineer with experience as web Full-Stack developer, integrating software and hardware for IoT projects. I also work with electronic design, processing signals, microcontroller, linux embedded systems. My passion is about techs development and computer vision systems."
+        },
+        "skills": [{
+                "title": "Backend",
+                "description": "I worked with multiple language and technologies in backend. Including Serverless",
+                "skillNames": [
+                    "PHP - Framework Laravel",
+                    "Python - Serverless Framework",
+                    "SQL - MySQL"
+                ]
+            },
+            {
+                "title": "FrontEnd",
+                "description": "I love to work with interface, making things look good",
+                "skillNames": [
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "Javascript",
+                    "Angular >v6"
+                ]
+            },
+            {
+                "title": "DevOps",
+                "description": "I'm in continuous improvement with best practices for delivery of clean code",
+                "skillNames": [
+                    "AWS",
+                    "Bitbucket pipelines"
+                ]
+            },
+            {
+                "title": "Others",
+                "description": "Like mecathronics engineer I have other skills and passions",
+                "skillNames": [
+                    "Firmware Development",
+                    "Electronic circuit design",
+                    "Computer vision",
+                    "Embedded system development",
+                    "IoT architecture"
+                ]
+            }
+        ],
+        "works": {
+            "title": "My recent projects",
+            "description": "I have worked in some projects. Some of backend, others of frontend and anothers of hardware and firmware",
+            "thumb": {
+                "website": "Website",
+                "dialogBtn": "What I did?"
+            },
+            "recents": [{
+                    "title": "Supplier to the automotive industry since 1993",
+                    "madeTitle": "PHP - Framework Laravel",
+                    "madeDescription": "I worked in a shipments and landings modules for Katcon's suppliers. I was a sub-employee from Digital Catus Mx",
+                    "details": []
+                },
+                {
+                    "title": "Public opinion massive caller",
+                    "madeTitle": "Laravel / Angular",
+                    "madeDescription": "In pollposition I worked with a team in both sides, backend and frontend. In this case I worked more often in backend. The principal target was created interactive automated phone calls inquests for massive calls",
+                    "details": [{
+                            "name": "Twilio",
+                            "description": "We used Twilio programmable voice for build the automated conversations"
+                        },
+                        {
+                            "name": "IFT algorithm",
+                            "description": "We implement an algorithm for generated real phone numbers using IFT (Instito Federal de Telecomunicaciones) information"
+                        }, {
+                            "name": "Passport",
+                            "description": "We use Passport first-party client API"
+                        }, {
+                            "name": "Queues",
+                            "description": "An inquest could be realized for a entired city, so we implements severals queues for dispatching calls according with available phone callers"
+                        }, {
+                            "name": "DevOps",
+                            "description": "I implemented DevOps workflow. For backend I used Envoy and for frontend I used bitbucket pipelines. Both were deployed on AWS, EC2 and S3 respectively"
+                        }
+                    ]
+                },
+                {
+                    "title": "Taxi's platform for public transportation",
+                    "madeTitle": "Laravel / Python",
+                    "madeDescription": "We made a complete platform for proccess electronic (credit card, SPEI, etc) and cash payments, driver balance and invoice emitter system",
+                    "details": [{
+                            "name": "Openpay",
+                            "description": "I made a payment gateway in a microservice using PHP SDK for process payment. The gateways get requests from mobile app and core web serve.This gateway could be integrated like a first-party in core server"
+                        },
+                        {
+                            "name": "Emite",
+                            "description": "We automatize the process of a taxi driver make an invoice"
+                        }, {
+                            "name": "AWS SAM (Python)",
+                            "description": "To confirm a payments of a taxi driver was successful, I made a AWS Serverless Application Model function to confirm it and fire a notification event in firebase"
+                        }, {
+                            "name": "Passport",
+                            "description": "We use Passport first-party client API"
+                        }
+                    ]
+                },
+                {
+                    "title": "Kids car rental for malls",
+                    "madeTitle": "PHP - Framework Laravel",
+                    "madeDescription": "We made a CRM for car rentals based in time. Generate reports by placements and employees",
+                    "details": []
+                },
+                {
+                    "title": "Engineering and biotechnology solutions",
+                    "madeTitle": "Firmware / ESP8266",
+                    "madeDescription": "We made a IoT monitoring system for a grease solvent. With a low level of dissolvent the device send an alert to a Slack account",
+                    "details": [{
+                            "name": "ESP8266",
+                            "description": "We selected ESP8266 microcontroller beacause has a native WiFi integrations in firmware"
+                        },
+                        {
+                            "name": "Arduino Framewok",
+                            "description": "I programm the microcontroller using Arduino Framework"
+                        }
+                    ]
+                },
+                {
+                    "title": "Startup focus on design and create products to the dance world",
+                    "madeTitle": "Firmware / ESP32",
+                    "madeDescription": "We made a device can sense an accelerometer and gyroscope to advertise with leds the position of the ballerina's foot and advertise the info by bluetooth",
+                    "details": [{
+                            "name": "ESP32",
+                            "description": "We selected ESP32 microcontroller beacause has a native Bluetooth >4.0 integrations in firmware"
+                        },
+                        {
+                            "name": "Arduino Framewok",
+                            "description": "I programm the microcontroller using Arduino Framework"
+                        }
+                    ]
+                }
+            ]
+        },
+        "startups": {
+            "title": "My Startups",
+            "description": "I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.",
+            "status": {
+                "shutdown": "Shutdown",
+                "progress": "Working on",
+                "launched": "Launched"
+            },
+            "list": [
+                "You want your techs ideas comes true. We make it posible, we help business into a digital transition",
+                "Measure, optimize and monetize the energy consumption of your industrial equipments using IoT and data Analytics"
+            ]
+        },
+        "talk": {
+            "title": "Want to talk?",
+            "description": "I like to share ideas with someone else, talking about product design or maybe I can help with any project in your mind.",
+            "button": "Let's take a coffe"
+        },
+        "personalProjects": {
+            "title": "Personal projects",
+            "description": [
+                "When I have some free time, I made some little personal projects",
+                "I will publish some of them soon, I just need a little time to find them..."
+            ],
+            "start": {
+                "title": "Start a project",
+                "description": "Interested in working together? We should queue up a chat.",
+                "button": "Let's do this"
+            }
+        }
+    },
     "startups": {
         "avi": {
             "pricipalTitle": "What is it?",
@@ -48,5 +227,12 @@
             },
             "moreInfo": "You want to know more? Here is the web page "
         }
+    },
+    "footer": {
+        "quote": "Everyday is a new opportunity to improve yourself",
+        "sign": "Made with 💖 by me"
+    },
+    "wpBtn": {
+        "text": "Hi! I saw your web resume. Let's talk!"
     }
 }

@@ -14,14 +14,14 @@
                     <h3><img src="assets/images/logo_white.svg" width="70"></h3>
                 </div>
                 <div class="col-md-4 offset-md-4 col-sm-12 thinking">
-                    <p>Everyday is a new opportunity to improve yourself</p>
+                    <p>{{ 'footer.quote' | translate }}</p>
                 </div>
                 <div class="col-md-6 offset-md-3 col-sm-12 social">
                     <a *ngFor="let media of social" class="btn btn-circle btn-white" [href]="media.link" target="_blank"><i class="fab {{ media.icon }}"></i></a>
                 </div>
 
                 <div class="col-12 mt-5 farewell">
-                    <p>Made with 💖 by me</p>
+                    <p>{{ 'footer.sign' | translate }}</p>
                 </div>
             </div>
         </div>

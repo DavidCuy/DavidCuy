@@ -1,4 +1,183 @@
 {
+    "navbar": {
+        "btn": {
+            "contact": "Contáctame",
+            "resume": "CV"
+        }
+    },
+    "index": {
+        "intro": [
+            "Hola soy David",
+            "Un desarrollador \nfullstack",
+            "¿Te gustaría ver \nmi trabajo?"
+        ],
+        "bio": {
+            "title": "Hola soy David Cuy. Gusto en conocerte",
+            "description": "Soy un ingeniero en mecatrónica con experiencia como desarrollador web full-stack utilizando diferentes frameworks de backend, front-end e implementando técnicas de DevOps. Tengo experiencia integrando software y hardware para desarrollo de proyectos de IoT en la nube AWS. Cuento conocimiento en el área de electrónica, tratamiento de señales, microcontroladores, sistemas linux embebidos y gusto por el desarrollo tecnológico y sistemas de visión por computadora."
+        },
+        "skills": [{
+                "title": "Backend",
+                "description": "He trabajado en varios lenguajes y tecnologías en backend, incluso Serverless",
+                "skillNames": [
+                    "PHP - Framework Laravel",
+                    "Python - Serverless Framework",
+                    "SQL - MySQL"
+                ]
+            },
+            {
+                "title": "FrontEnd",
+                "description": "Me gusta trabajar en interfaces de usuario, hacer que las cosas se vean bien",
+                "skillNames": [
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "Javascript",
+                    "Angular >v6"
+                ]
+            },
+            {
+                "title": "DevOps",
+                "description": "Me encuentro en mejora continua en las buenas prácticas para la entrega de código limpio",
+                "skillNames": [
+                    "AWS",
+                    "Bitbucket pipelines"
+                ]
+            },
+            {
+                "title": "Otros",
+                "description": "Como ingenierio mecatrónico tengo otras habilidades y gustos",
+                "skillNames": [
+                    "Desarrollo de firmware",
+                    "Diseño de circuitos electrónicos",
+                    "Visión por computadora",
+                    "Desarollo de sistemas embebidos",
+                    "Arquitectura de IoT"
+                ]
+            }
+        ],
+        "works": {
+            "title": "Mis proyectos recientes",
+            "description": "Trabajé en varios proyectos, algunos de backend, otros de frontend y otros de hardware y firmware",
+            "thumb": {
+                "website": "Sitio web",
+                "dialogBtn": "¿Qué hice?"
+            },
+            "recents": [{
+                    "title": "Proveedor de la industria automotriz desde 1993",
+                    "madeTitle": "PHP - Framework Laravel",
+                    "madeDescription": "Trabajé en un módulo de envíos y embarques para los proveedores de Katcon. Fui subcontratado por la empresa Digital Catus Mx",
+                    "details": []
+                },
+                {
+                    "title": "Encuestas masivas de opinión pública",
+                    "madeTitle": "Laravel / Angular",
+                    "madeDescription": "En pollposition trabajé en ambos equipos (frontend y backend), aunque más en backend. El objetivo principal era crear llamadas de teléfono automáticas interactivas para encuestas masivas",
+                    "details": [{
+                            "name": "Twilio",
+                            "description": "Utilizamos Twilio progrmmable voice para crear las conversaciones automáticas"
+                        },
+                        {
+                            "name": "Algoritmo IFT",
+                            "description": "Se implementó un algoritmo para generar números de teléfonos reales utilizando información de la IFT (Instito Federal de Telecomunicaciones)"
+                        }, {
+                            "name": "Passport",
+                            "description": "Se creó una first-party API utilizando Passport"
+                        }, {
+                            "name": "Queues",
+                            "description": "Una encuesta podría ser realizada a una ciudad entera, así que se implementó bloques de trabajo de colas para poder atender las llamadas de acuerdo a un número que se encontrara disponible"
+                        }, {
+                            "name": "DevOps",
+                            "description": "Se implementó un flujo de trabajo para DevOps. Para el backend se utilizó Envoy, mientras que para el frontend los pipelines de bitbucket. Ambos fueron publicados en AWS, EC2 y S3 respectivamente"
+                        }
+                    ]
+                },
+                {
+                    "title": "Plataforma para el transporte público de taxis",
+                    "madeTitle": "Laravel / Python",
+                    "madeDescription": "Se creó una plataforma completa para el proceso de pagos electrónicos y en efectivo para el conductor, así como su balance y un emisor de facturación",
+                    "details": [{
+                            "name": "Openpay",
+                            "description": "Se utilizó la pasarela de pago de openpay en un microservicios para el pago de conductor utilizando el SDK de PHP. Las peticiones eran recibidas desde dispositivos móviles y el dashboard principal"
+                        },
+                        {
+                            "name": "Emite",
+                            "description": "Se automatizó el proceso para que un taxista pueda generar una factura"
+                        }, {
+                            "name": "AWS SAM (Python)",
+                            "description": "Para confirmar los pagos a taxistas fue exitoso, se creó una función con AWS Serverless Application Model, esta función disparaba notificaciones a firebase"
+                        }, {
+                            "name": "Passport",
+                            "description": "Se implementó una first-party API para su fácil manejo"
+                        }
+                    ]
+                },
+                {
+                    "title": "Rentas de autos para niños en plazas y malls",
+                    "madeTitle": "PHP - Framework Laravel",
+                    "madeDescription": "Se hizo un CRM para renta de autos basado en tiempo. Se generaban reportes por establecimiento y empleados",
+                    "details": []
+                },
+                {
+                    "title": "Soluciones en ingeniería y biotecnología",
+                    "madeTitle": "Firmware / ESP8266",
+                    "madeDescription": "Se creó un sistema de monitorio IoT para un disolvente de grasa. Cuando el nivel del disolvente era bajo, el dispositivo envía una alerta a una cuenta de Slack",
+                    "details": [{
+                            "name": "ESP8266",
+                            "description": "Se seleccionó el microcontrolador ESP8266 por tener integración del Stack de WiFi nativo"
+                        },
+                        {
+                            "name": "Arduino Framewok",
+                            "description": "Programé el microcontrolador utilizando el framework de arduino"
+                        }
+                    ]
+                },
+                {
+                    "title": "Startup enfocada en el diseño y creación de productos para el mundo de la danza",
+                    "madeTitle": "Firmware / ESP32",
+                    "madeDescription": "Se hizo un dispositivo que era capaz de sensar un acelerómetro y giroscopio. Indicaba la posición del pie con leds y puede enviar información a través de bluetooth",
+                    "details": [{
+                            "name": "ESP32",
+                            "description": "Se seleccionó el microcontrolador por tener integración del Stack de Bluetooth >4.0 nativo"
+                        },
+                        {
+                            "name": "Arduino Framewok",
+                            "description": "Programé el microcontrolador utilizando el framework de arduino"
+                        }
+                    ]
+                }
+            ]
+        },
+        "startups": {
+            "title": "Mis Startups",
+            "description": "Me obsesiona los productos digitales. A través de los años, he usado cientos de páginas webs y apps móviles en diferentes verticales de la tecnología. Eventualmente decidí que sería un buen desafío intentar diseñar y construir uno propio.",
+            "status": {
+                "shutdown": "Cerrado",
+                "progress": "En proceso",
+                "launched": "Lanzado"
+            },
+            "list": [
+                "¿Quieres hacer realizad tus ideas de tecnología? Nosotros te ayudamos en la transición de tu negocio a la era digital",
+                "Mide, optimiza y monetiza el consumo de energía de tus equipos industriales utilizando IoT e analítica de datos"
+            ]
+        },
+        "talk": {
+            "title": "¿Quieres que hablemos?",
+            "description": "Me gusta compartir ideas, hablar acerca de diseño de productos o quizás pueda ayudar en algún proyecto que tengas en mente.",
+            "button": "Tomemos un café"
+        },
+        "personalProjects": {
+            "title": "Proyectos personales",
+            "description": [
+                "Cuando tenga algún tiempo libre publicaré algunos de mis proyectos personales.",
+                "Espero que sea pronto, sólo necesito encontrarlos..."
+            ],
+            "start": {
+                "title": "Iniciemos un proyecto",
+                "description": "¿Te interesa que trabajemos juntos? Podríamos agendar un plática.",
+                "button": "Hagámoslo"
+            }
+        }
+    },
     "startups": {
         "avi": {
             "pricipalTitle": "¿Qué es AVI?",
@@ -48,5 +227,12 @@
             },
             "moreInfo": "¿Deseas conocer más? Aquí te dejo el enlace a la web de "
         }
+    },
+    "footer": {
+        "quote": "Cada día es una nueva oportunidad para mejorar",
+        "sign": "Hecho con 💖 por mi"
+    },
+    "wpBtn": {
+        "text": "¡Hola! Vi tu web personal. ¿Podemos hablar?"
     }
 }

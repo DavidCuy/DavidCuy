@@ -4,6 +4,8 @@
     background-color: rgb(15, 15, 16);
     display: flex;
     justify-content: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .header-main pre {
@@ -15,17 +17,22 @@
 
 .typewriter {
     overflow: hidden;
+    display: inline-block;
 }
 
 .typewriter pre {
-    border-right: .15em solid orange;
+    text-align: center;
     white-space: nowrap;
+    border-right: .15em solid orange;
     letter-spacing: .15em;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    margin-top: 45vh;
+    margin-top: 35vh;
     font-size: 50px;
     text-transform: uppercase;
     overflow: unset;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    line-height: 1em;
 }
 
 .theme-color {
