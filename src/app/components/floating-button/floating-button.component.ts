@@ -10,7 +10,6 @@ export class FloatingButtonComponent implements OnInit {
   @Input() initialText: string;
 
   constructor() {
-    console.log(this.telNumber);
     this.initialText = encodeURI(this.initialText);
   }
 

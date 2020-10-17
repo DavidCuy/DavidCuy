@@ -21,13 +21,11 @@ export class ImageThumbComponent implements OnInit {
   }
 
   openDialog(): void {
-    console.log('open dialog');
     const dialogRef = this.dialog.open(WorkDialogComponent, {
       data: this.workDetails
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(result);
     });
   }
 

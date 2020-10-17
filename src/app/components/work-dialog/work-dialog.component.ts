@@ -9,7 +9,6 @@ import { WorkMade } from '../../interfaces/workmade.interface';
 })
 export class WorkDialogComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<WorkDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: WorkMade) {
-    console.log(data);
   }
 
   ngOnInit(): void {

@@ -350,7 +350,6 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
 
   public moreInfo(skill: Skill): void {
     alert(skill.name);
-    console.log(skill);
   }
 
 }

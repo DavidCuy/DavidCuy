@@ -44,13 +44,11 @@ export class AppComponent implements OnInit {
   }
 
   fadeInStart(event: any): void {
-    console.log(event);
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 750);
   }
 
   fadeInDone(event: any): void {
-    console.log(event);
   }
 }

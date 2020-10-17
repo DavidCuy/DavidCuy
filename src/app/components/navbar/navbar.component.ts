@@ -13,7 +13,6 @@ export class NavbarComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
     const lang = this.translate.getDefaultLang();
-    console.log(this.translate.getDefaultLang());
     if (lang === 'es') {
       this.fileName = 'CV___David_Cuy_Sanchez';
     } else {
