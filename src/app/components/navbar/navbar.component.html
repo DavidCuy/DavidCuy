@@ -23,6 +23,22 @@
                 <li class="nav-item ml-2">
                     <button type="button" (click)="download_resume()" class="btn btn-outline btn-pdf"><i class="fas fa-file-pdf" style="color: white"></i> {{ 'navbar.btn.resume' | translate }}</button>
                 </li>
+
+                <li class="nav-item ml-2">
+                    <div class="dropdown">
+                        <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span [ngClass]="['flag-icon', flag]" ></span>{{ 'lang.name' | translate }}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="javascript:void(0)" (click)="updateLanguage('es')">
+                                <span class="flag-icon flag-icon-mx"></span>{{ 'lang.es' | translate }}
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0)" (click)="updateLanguage('en')">
+                                <span class="flag-icon flag-icon-us"></span>{{ 'lang.en' | translate }}
+                            </a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

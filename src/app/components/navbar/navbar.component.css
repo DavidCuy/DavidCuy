@@ -42,6 +42,10 @@
     border-color: #b30b00;
 }
 
+.btn-navbar {
+    color: white;
+}
+
 .btn-pdf:hover,
 .btn-pdf:active {
     color: white;

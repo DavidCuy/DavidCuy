@@ -18,3 +18,20 @@
     background-color: #25D366;
     border-radius: 50px;
 }
+
+.mobile-fab-tip {
+    position: fixed;
+    right: 105px;
+    padding: 0px 0.5rem;
+    text-align: right;
+    background-color: #323232;
+    border-radius: 2px;
+    color: #FFF;
+    width: auto;
+    display: none;
+    bottom: 60px;
+}
+
+.float:hover .mobile-fab-tip {
+    display: initial;
+}

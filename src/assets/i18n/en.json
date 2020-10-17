@@ -1,4 +1,9 @@
 {
+    "lang": {
+        "name": "Language",
+        "es": "Spanish",
+        "en": "English"
+    },
     "navbar": {
         "btn": {
             "contact": "Contact me",
@@ -233,6 +238,7 @@
         "sign": "Made with 💖 by me"
     },
     "wpBtn": {
-        "text": "Hi! I saw your web resume. Let's talk!"
+        "text": "Hi! I saw your web resume. Let's talk!",
+        "message": "WP me!"
     }
 }

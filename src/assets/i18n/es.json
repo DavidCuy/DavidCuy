@@ -1,4 +1,9 @@
 {
+    "lang": {
+        "name": "Idioma",
+        "es": "Español",
+        "en": "Inglés"
+    },
     "navbar": {
         "btn": {
             "contact": "Contáctame",
@@ -233,6 +238,7 @@
         "sign": "Hecho con 💖 por mi"
     },
     "wpBtn": {
-        "text": "¡Hola! Vi tu web personal. ¿Podemos hablar?"
+        "text": "¡Hola! Vi tu web personal. ¿Podemos hablar?",
+        "message": "¡Envía un WP!"
     }
 }
