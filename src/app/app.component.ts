@@ -12,7 +12,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent implements OnInit {
 
-  public activeLang = 'es';
+  public activeLang = 'en';
 
   telNumber = '9991941528';
   wpText = 'Hi! I saw your web resume. Let\'s talk!';
@@ -33,6 +33,9 @@ export class AppComponent implements OnInit {
 
   constructor(private translate: TranslateService, private cookies: CookieService) {
     this.activeLang = this.cookies.get('language');
+    if (this.activeLang === '' || this.activeLang === null || this.activeLang === undefined) {
+      this.activeLang = 'en';
+    }
     this.translate.setDefaultLang(this.activeLang);
   }
 

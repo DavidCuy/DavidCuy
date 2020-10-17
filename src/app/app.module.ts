@@ -51,6 +51,7 @@ import { CloseButtonComponent } from './components/close-button/close-button.com
     MatDialogModule,
     HttpClientModule,
     TranslateModule.forRoot({
+      defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
         useFactory: (http: HttpClient) => {
