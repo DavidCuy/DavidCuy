@@ -240,5 +240,9 @@
     "wpBtn": {
         "text": "¡Hola! Vi tu web personal. ¿Podemos hablar?",
         "message": "¡Envía un WP!"
+    },
+    "cookies": {
+        "web": "Lo sé, lo sé. Es molesto ver esta advertencia, pero es una obligación. Solo lo uso para seleccionar idioma",
+        "mobile": "Este sitio web utiliza cookies para una mejor experiencia"
     }
 }

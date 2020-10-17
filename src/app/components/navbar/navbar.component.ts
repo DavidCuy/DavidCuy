@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { CookieService } from 'ngx-cookie-service';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,15 +14,17 @@ export class NavbarComponent implements OnInit {
   fileName: string;
   flag: string;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private cookies: CookieService, private sharedService: SharedService) {
     const lang = this.translate.getDefaultLang();
     if (lang === 'es') {
       this.flag = 'flag-icon-mx';
       this.fileName = 'CV___David_Cuy_Sanchez';
     } else {
-      this.flag = 'flag-icon-mx';
+      this.flag = 'flag-icon-us';
       this.fileName = 'CV___David_Cuy_Sanchez___EN';
     }
+
+    this.sharedService.updateLang(lang);
   }
 
   ngOnInit(): void {
@@ -43,9 +47,11 @@ export class NavbarComponent implements OnInit {
       this.flag = 'flag-icon-mx';
       this.fileName = 'CV___David_Cuy_Sanchez';
     } else {
-      this.flag = 'flag-icon-mx';
+      this.flag = 'flag-icon-us';
       this.fileName = 'CV___David_Cuy_Sanchez___EN';
     }
+    this.cookies.set('language', lang);
+    this.sharedService.updateLang(lang);
   }
 
 }

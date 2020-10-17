@@ -240,5 +240,9 @@
     "wpBtn": {
         "text": "Hi! I saw your web resume. Let's talk!",
         "message": "WP me!"
+    },
+    "cookies": {
+        "web": "I know, I know. It's annoying see this advertise but is a mandadory. I just used in language",
+        "mobile": "This website uses cookies for a better experience"
     }
 }

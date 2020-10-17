@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { fadeInAnimation } from './animations/fade-in.animation';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private cookies: CookieService) {
+    this.activeLang = this.cookies.get('language');
     this.translate.setDefaultLang(this.activeLang);
   }
 

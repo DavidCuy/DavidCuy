@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterContentInit, OnDestroy } from '@angular/core';
 import { Knowledge, Skill, Work, StartUp } from '../../interfaces/interface.index';
 import { TranslateService } from '@ngx-translate/core';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-index',
@@ -252,7 +253,9 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
 
   timeouts = [];
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private sharedService: SharedService) { }
+
+  updateLangView(): void {
     // SKILLS
     // tslint:disable-next-line:no-shadowed-variable
     for (const { index, value } of this.knowledges.map((value, index) => ({ index, value }))) {
@@ -294,6 +297,14 @@ export class IndexComponent implements OnInit, AfterContentInit, OnDestroy {
   }
 
   async ngAfterContentInit(): Promise<any> {
+    this.sharedService.sharedMessage.subscribe(async lang => {
+      this.updateLangView();
+      this.aText = [];
+      for (let i = 0; i < 3; i++) {
+        this.aText.push(await this.translate.get(`index.intro.${ i }`).toPromise());
+      }
+    });
+
     for (let i = 0; i < 3; i++) {
       this.aText.push(await this.translate.get(`index.intro.${ i }`).toPromise());
     }
