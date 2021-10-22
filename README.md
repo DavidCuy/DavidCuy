@@ -1,27 +1,24 @@
-# Resume
+# Hi I'm David Cuy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+![Alt Text](docs/img/banner.gif)
 
-## Development server
+## To know more about me, here!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![Alt Text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-cuy-59a3b7129/)
 
-## Code scaffolding
+[![Alt Text](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://davidcuy.github.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## About me
+I’m a Mechatronics Engineer with experience as web Full-Stack developer (Backend, Frontend and DevOps). I have experience integrating software and hardware for IoT projects on AWS cloud. I also work with electronic design, processing signals, microcontroller, linux embedded systems. My passion is about techs development.
 
-## Build
+## Projects I worked
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+I raised two start ups about where I develops multiples projects and products. If you want to know more about these start ups and what kinds of projects I do, in my [personal site](https://davidcuy.github.io/)
 
-## Running unit tests
+## Some of techonologies I use
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white) ![SQL SERVER](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) ![Microsoft Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white) ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Some of my stats
+[![DavidCuy's GitHub stats](https://github-readme-stats.vercel.app/api?username=DavidCuy)](https://github.com/DavidCuy/resume)
