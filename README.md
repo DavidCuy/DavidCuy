@@ -22,3 +22,6 @@ I raised two start ups about where I develops multiples projects and products. I
 
 ## Some of my stats
 [![DavidCuy's GitHub stats](https://github-readme-stats.vercel.app/api?username=DavidCuy)](https://github.com/DavidCuy/resume)
+
+## My languages skills
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DavidCuy&theme=react)](https://github.com/anuraghazra/github-readme-stats)
