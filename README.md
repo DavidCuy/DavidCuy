@@ -1,6 +1,6 @@
 # Hi I'm David Cuy
 
-![Alt Text](docs/img/banner.gif)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier&letterSpacing=bold&pause=1000&color=FFFFFF&background=000000&center=true&vCenter=true&width=435&lines=Hi!+I'm+David+Cuy;Cloud+Architech+%26+Developer;Coffee+%26+Cat+Lover)](https://git.io/typing-svg)
 
 ## To know more about me, here!
 
